@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-image: url(../static/back_info.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: scale(1.5); /* Увеличиваем масштаб на 150% */
+            transform-origin: top left; /* Начало трансформации */
+            width: 66.67%; /* Компенсация масштабирования для правильной работы ширины */
+            height: 66.67%; /* Компенсация масштабирования для правильной работы высоты */
+            overflow-x: hidden; /* Скрываем горизонтальную полосу прокрутки */
+        }
+        @font-face {
+            font-family: 'Open Sans';
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+            src: url('../fonts/RobotoFlex-Regular.ttf') format('truetype');
+        }
+
+        .header-text {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 128px;
+            font-weight: 800; /* используем font-weight: 800 для жирного шрифта */
+            color: white;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .button-container {
+            display: flex; /* Выравнивание кнопок в ряд */
+            gap: 20px; /* Промежуток между кнопками */
+        }
+
+        .register-button {
+            background-color: red;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 18px;
+            width: 25%; /* Задаем ширину кнопки 1/4 страницы */
+            text-align: center; /* Выравниваем текст по центру кнопки */
+        }
+        .log-button {
+            background-color: #002137;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 18px;
+            width: 25%; /* Задаем ширину кнопки 1/4 страницы */
+            text-align: center; /* Выравниваем текст по центру кнопки */
+        }
+    </style>
+    <title>Супер Отель</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="header-text">Следи за своими путешествиями</h1>
+    <div class="button-container">
+        <a href="/reg" class="register-button">Регистрация</a>
+        <a href="/login" class="log-button">Войти</a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

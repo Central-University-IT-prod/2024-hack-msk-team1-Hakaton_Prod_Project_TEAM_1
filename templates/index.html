@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Bootstrap demo</title>
+    <style>
+      body {
+        color: white;
+        background-image: url(../static/nothing_wall.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+    </style>
+  </head>
+  <body>
+  <a href='/logout'>Выйти!</a>
+  <div class="menu">
+    <button><a type="button" class="btn btn-danger btn-sm" href="/">Главная</a></button>
+    <button><a type="button" class="btn btn-danger btn-sm" href="/nofications">Уведомления</a></button>
+    <button><a type="button" class="btn btn-danger btn-sm" href="/account/{{ id }}">Аккаунт</a></button>
+    <button><a type="button" class="btn btn-danger btn-sm" href="/logout">Выйти</a></button>
+  </div>
+
+  <div class="not-background">
+    <div class="block" style="background-image: url(../static/hotel-eleon2.png); background-color: rgba(0, 0, 0, 0.3);">
+      <h2>Отели</h2>
+      <center>
+        <div class="last-1">
+          <strong class="hotel-name-index">Отель "Белград"</strong>
+          <strong class="hotel-date-index">17-09-2024</strong>
+        </div>
+        <div class="last-1">
+          <strong class="hotel-name-index">Гостиница "Форест Гамп"</strong>
+          <strong class="hotel-date-index">14-88-2099</strong>
+        </div>
+      </center>
+
+    </div>
+
+    <div class="block" style="background-image: url(../static/scale_1200.png); background-color: rgba(0, 0, 0, 0.3);">
+      <h2>Расходы</h2>
+      <center>
+        <div class="last-1">
+          <strong class="hotel-name-index">Отель "Белград"</strong>
+          <strong class="hotel-date-index">17-09-2024</strong>
+        </div>
+        <div class="last-1">
+          <strong class="hotel-name-index">Гостиница "Форест Гамп"</strong>
+          <strong class="hotel-date-index">14-88-2099</strong>
+        </div>
+      </center>
+
+    </div>
+
+    <div class="block" style="background-image: url(../static/mc-21-73053-820x410.jpg); background-color: rgba(0, 0, 0, 0.3);">
+      <h2>Авиабилеты</h2>
+      <center>
+        <div class="last-1">
+          <strong class="hotel-name-index">S7 Airlines</strong>
+          <strong class="hotel-date-index">15-09-2024</strong>
+        </div>
+        <div class="last-1">
+          <strong class="hotel-name-index">Аэрофлот</strong>
+          <strong class="hotel-date-index">25-88-2099</strong>
+        </div>
+      </center>
+    </div>
+
+    <div class="block" style="background-image: url(../static/elephants1.png); background-color: rgba(0, 0, 0, 0.3);">
+      <h2>Развлечения</h2>
+      <center>
+        <div class="last-1">
+          <strong class="hotel-name-index">Катание на Норвежских слонах</strong>
+          <strong class="hotel-date-index">42-10-2024</strong>
+        </div>
+        <div class="last-1">
+          <strong class="hotel-name-index">Растягивание фимоза</strong>
+          <strong class="hotel-date-index">01-56-2098</strong>
+        </div>
+      </center>
+    </div>
+
+  </div>
+
+
+
+  </body>
+</html>

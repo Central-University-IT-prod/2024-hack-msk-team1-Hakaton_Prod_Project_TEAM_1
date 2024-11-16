@@ -1,0 +1,6 @@
+.env
+.idea/
+__pycash__/
+venv/
+.venv/
+

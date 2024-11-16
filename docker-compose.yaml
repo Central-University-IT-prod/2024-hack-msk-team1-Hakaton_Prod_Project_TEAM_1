@@ -1,0 +1,38 @@
+services:
+    api:
+        env_file:
+          - .env
+        build:
+            context: .
+        depends_on:
+          postgres:
+            condition: service_healthy
+          migrations:
+            condition: service_completed_successfully
+        restart: unless-stopped
+        environment:
+         - FLASK_ENV=development
+         - DATABASE_URL=postgresql://postgres:CrashLoyale@localhost/hakaton      
+        ports:
+          - "5000:5000"
+
+    postgres:
+      image: postgres
+      restart: unless-stopped
+      environment:
+        POSTGRES_DB: ${DB_DBNAME}
+        POSTGRES_USER: ${DB_USERNAME}
+        POSTGRES_PASSWORD: ${DB_PASSWORD}
+      healthcheck:
+        test: [ "CMD", "pg_isready", "-q", "-d", "${DB_DATABASE}", "-U", "${DB_USERNAME}" ]
+        interval: 1s
+
+    migrations:
+      env_file:
+        - .env
+      depends_on:
+        postgres:
+          condition: service_healthy
+      build:
+        context: .
+      command: alembic upgrade head

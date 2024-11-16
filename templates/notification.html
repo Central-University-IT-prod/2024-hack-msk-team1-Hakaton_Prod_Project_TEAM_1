@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Уведомления</title>
+  <style>
+    body {
+      color: white;
+      background-image: url(../static/nothing_wall.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  </style>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="menu">
+  <button><a type="button" class="btn btn-danger btn-sm" href="/">Главная</a></button>
+  <button><a type="button" class="btn btn-danger btn-sm" href="/nofications">Уведомления</a></button>
+  <button><a type="button" class="btn btn-danger btn-sm" href="/account">Аккаунт</a></button>
+  <button><a type="button" class="btn btn-danger btn-sm" href="/logout">Выйти</a></button>
+</div>
+<div class="not-background2">
+<h1>Уведомления</h1>
+
+  <!--      {% for i in notifications%}-->
+  <!--        {% if len(notifications) == 0%}-->
+  <!--          <h1>Увы, а может и к счастью здесь уведомлений нет</h1>-->
+  <!--        {% endif%}-->
+  <!--      {% endfor%}-->
+  <!--      Это так на заметку-->
+  <div class="notification">
+    <h3>Отель "Белград" шлет вам уведомление!</h3>
+    <p class="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut odio ante, auctor vitae cursus vitae, fringilla eu lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi sagittis iaculis neque, sit amet consectetur orci posuere a. Duis lectus neque, varius nec scelerisque quis, rutrum in libero. Proin consectetur felis a vestibulum fringilla. Maecenas eu lectus auctor lacus commodo suscipit. Curabitur mattis lobortis ligula. Aliquam vel aliquam purus. Ut consequat enim eu ultrices sodales. Aliquam erat volutpat. Nam non efficitur felis, bibendum tempus enim.</p>
+  </div>
+</div>
+</body>
+</html>
